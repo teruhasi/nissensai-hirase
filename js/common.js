@@ -1,14 +1,17 @@
 "use strict";
 
-const swiper = new Swiper(".swiper", {
-  loop: true,
-  slidesPerView: 1.3,
-  spaceBetween: 12,
-  centeredSlides: true,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
+// ... 既存のコード ...
+
+document.addEventListener("DOMContentLoaded", function () {
+  const swiper = new Swiper(".swiper", {
+    loop: false,
+    spaceBetween: 12,
+    width: 300,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
 });
 
 const slideBtns = document.querySelectorAll(".section__stalls-btn");
